@@ -1,0 +1,180 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff3547;
+    color: #fff;
+}
+
+.logo img {
+    width: 150px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a:hover {
+    background-color: #ff6666;
+}
+
+/* First Section (Banner) */
+main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/img/bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+}
+
+main section:first-of-type img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+main section:first-of-type p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main section:first-of-type input {
+    padding: 10px;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 30px;
+    border: 1px solid #ff3547;
+    outline: none;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease;
+}
+
+main section:first-of-type input:focus {
+    box-shadow: 0 0 10px rgba(255, 53, 71, 0.5);
+}
+
+/* Second Section (Food Delivery Info) */
+.delivery-info {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.delivery-info h2 {
+    font-size: 36px;
+    color: #ff3547;
+    margin-bottom: 20px;
+}
+
+.delivery-info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.delivery-info .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.delivery-info .feature {
+    text-align: center;
+    width: 250px;
+}
+
+.delivery-info .feature img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.delivery-info .feature h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.delivery-info .feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+.delivery-info .explore-btn {
+    background-color: #ff3547;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delivery-info .explore-btn:hover {
+    background-color: #ff6666;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    main section:first-of-type input {
+        width: 80%;
+    }
+
+    header ul {
+        display: block;
+        text-align: center;
+    }
+
+    .delivery-info .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .delivery-info .feature {
+        width: 100%;
+    }
+}
